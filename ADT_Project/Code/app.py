@@ -14,7 +14,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://onlineretail:Akshar%401107@onlineretail.dypymnu.mongodb.net/")
+MONGO_URI = os.getenv("mongodb+srv://onlineretail:Akshar%401107@onlineretail.dypymnu.mongodb.net/?retryWrites=true&w=majority&tls=true")
 DB_NAME = os.getenv("DB_NAME", "Online_Retail")
 COLLECTION = os.getenv("COLLECTION", "transactions")
 
