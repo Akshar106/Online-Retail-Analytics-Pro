@@ -14,8 +14,8 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
-DB_NAME = os.getenv("DB_NAME", "retail_db")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://onlineretail:Akshar%401107@onlineretail.dypymnu.mongodb.net/")
+DB_NAME = os.getenv("DB_NAME", "Online_Retail")
 COLLECTION = os.getenv("COLLECTION", "transactions")
 
 app = Flask(__name__)
